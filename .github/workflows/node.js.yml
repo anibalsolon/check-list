@@ -6,12 +6,12 @@ on:
   pull_request:
     branches: [ "main" ]
 
-defaults:
-  run:
-    working-directory: ./vue
-
 jobs:
   build:
+  
+  defaults:
+    run:
+      working-directory: ./vue
 
     runs-on: ubuntu-latest
       
